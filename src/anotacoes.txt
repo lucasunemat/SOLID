@@ -1,0 +1,2 @@
+* npx npm-check u ==> atualizar todos os modulos
+* npm i ==> instala configurações do package.json
