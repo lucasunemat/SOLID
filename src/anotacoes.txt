@@ -1,2 +1,4 @@
 * npx npm-check u ==> atualizar todos os modulos
 * npm i ==> instala configurações do package.json
+* Primeiro tente sempre escrever o código direto e depois escrever com os principios solid
+
