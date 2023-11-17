@@ -1,8 +1,0 @@
-/*
- * Classe precisa ter só um motivo para mudar;
- * Ou seja, apenas uma responsabilidade;
- * Ex. responsabilidades: emitir e-mail, persistir dados no banco;
-    * Em caso de mutias validações numa classe só, é melhor separar em várias classes;
- * Evite God Class: classes com muitas responsabilidades;
-    * Classes que fazem tudo;
- */

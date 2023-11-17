@@ -1,1 +1,3 @@
-export type CartItem = { name: string; price: number };
+/*eslint-disable*/
+
+export interface CartItem { name: string; price: number };

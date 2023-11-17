@@ -1,7 +1,7 @@
 /*eslint-disable*/
 
 import { CartItem } from './interfaces/cartItem';
-type OrderStatus = 'open' | 'closed';
+import { OrderStatus } from './interfaces/orderStatus';
 
 export class ShoppingCart {
   //array de objetos com atributos name e price
@@ -64,12 +64,3 @@ export class ShoppingCart {
   }
 }
 
-const shoppingCart = new ShoppingCart();
-shoppingCart.addItem({ name: 'Camiseta', price: 49.91 });
-shoppingCart.addItem({ name: 'Bermuda', price: 79.91 });
-shoppingCart.addItem({ name: 'Tenis', price: 129.91 });
-
-console.log(shoppingCart.items);
-console.log('Status atual carrinho=', shoppingCart.orderStatus);
-shoppingCart.checkout();
-console.log('Status atual carrinho=', shoppingCart.orderStatus);
