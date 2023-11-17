@@ -1,6 +1,6 @@
 /*eslint-disable*/
 
-type CartItem = { name: string; price: number };
+import { CartItem } from './interfaces/cartItem';
 type OrderStatus = 'open' | 'closed';
 
 export class ShoppingCart {
