@@ -10,6 +10,7 @@
     * Em caso de mutias validações numa classe só, é melhor separar em várias classes;
  * Evite God Class: classes com muitas responsabilidades;
     * Classes que fazem tudo;
+ * Coesão de class = classe usa os atributos dela nos metodos
 
 
 
