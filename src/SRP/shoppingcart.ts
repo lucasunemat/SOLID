@@ -1,8 +1,6 @@
 /*eslint-disable*/
 
 import { CartItem } from './interfaces/cartItem';
-import { OrderStatus } from './interfaces/orderStatus';
-import { Order } from './order';
 
 export class ShoppingCart {
 
