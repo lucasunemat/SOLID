@@ -1,10 +1,10 @@
 /*eslint-disable*/
 
-import { ShoppingCart } from './entities/shoppingcart';
-import { Order } from './entities/order';
+import { ShoppingCart } from './classes/shoppingcart';
+import { Order } from './classes/order';
 import { Messaging } from './services/messaging';
 import { Persistency } from './services/persistency';
-import { Product } from './entities/product';
+import { Product } from './classes/product';
 
 const shoppingCart = new ShoppingCart();
 const messaging = new Messaging();
