@@ -26,6 +26,11 @@ export class ShoppingCart {
       .toFixed(2));
   }
 
+  totalWithDiscount(): number {
+    return this.total() - (this.total() * 0,1);
+  }
+
+
   sendMessage(msg: string): void { //potencial atributo que não é responsabilidade do carrinho
     console.log('Mensagem enviada: ', msg);
   }

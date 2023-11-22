@@ -23,6 +23,7 @@ console.log(shoppingCart.items);
 //console.log('Status atual carrinho=', shoppingCart.orderStatus);
 //shoppingCart.checkout();
 //console.log('Status atual carrinho=', shoppingCart.orderStatus);
+console.log('Total com desconto = ', shoppingCart.totalWithDiscount());
 order.checkout();
 console.log('Novo total = ', shoppingCart.total());
 console.log('Status da ordem de compra = ',order.orderStatus);
