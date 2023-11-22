@@ -1,8 +1,8 @@
 /*eslint-disable*/
-import { OrderStatus } from './interfaces/orderStatus';
+import { OrderStatus } from '../interfaces/orderStatus';
 import { ShoppingCart } from './shoppingcart';
-import { Messaging } from './messaging';
-import { Persistency } from './persistency';
+import { Messaging } from '../services/messaging';
+import { Persistency } from '../services/persistency';
 
 export class Order {
   private _orderStatus: OrderStatus = 'open'; //potencial atributo que não é responsabilidade do carrinho
