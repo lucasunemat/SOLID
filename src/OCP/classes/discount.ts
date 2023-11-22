@@ -1,28 +1,33 @@
 /*eslint-disable*/
 
+/**
+ * Aqui é possível ver a aplicação do princípio DRY
+ * DRY = Don't Repeat Yourself
+ * Ao invés de repetir o método calculate
+ * Eu gero um método global
+ * E só mudo o valor de discount
+ */
+
 export abstract class Discount {
-  abstract calculate(value: number): number;
+  protected discount = 0; //desconto padrão: 0
+
+  calculate(price: number): number { //método funcional global
+    return price - price * this.discount;
+  }
 }
 
 export class FiftyPercentDiscount extends Discount {
   //usando discount aqui pq essa classe herda de Discount
-  private readonly discount = 0.5;
-  calculate(price: number): number {
-    return price - price * this.discount;
-  }
+  //agora é só ir mudando o valor de discount para mudar o desconto
+  protected readonly discount = 0.5;
+
 }
 
 export class TenPercentDiscount extends Discount {
   //usando discount aqui pq essa classe herda de Discount
-  private readonly discount = 0.1;
-  calculate(price: number): number {
-    return price - price * this.discount;
-  }
+  protected readonly discount = 0.1;
 }
 
-export class NoDiscount extends Discount {
-  //usando discount aqui pq essa classe herda de Discount
-  calculate(price: number): number {
-    return price;
-  }
-}
+//usando discount aqui pq essa classe herda de Discount
+export class NoDiscount extends Discount {}
+
