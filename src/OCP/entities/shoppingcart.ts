@@ -1,5 +1,13 @@
 /*eslint-disable*/
 
+/**
+ * OCP = Open Closed Principle
+ * Entidades devem estar abertas para extensão, mas fechadas para modificação
+ * Devo criar formas de, ao precisar modificar algo (como o desconto) eu não precisar mexer no código fonte
+ * Isso é feito na função totalWithDiscount, que recebe o desconto por meio de uma variavel que passo como parâmetro para a função
+ *
+ */
+
 import { CartItem } from '../interfaces/cartItem';
 
 export class ShoppingCart {
@@ -26,8 +34,8 @@ export class ShoppingCart {
       .toFixed(2));
   }
 
-  totalWithDiscount(): number {
-    return this.total() - (this.total() * 0,1);
+  totalWithDiscount(discount: number): number {
+    return this.total() - (this.total() * discount);
   }
 
 
