@@ -2,7 +2,7 @@
 
 /**
   * Interface Segregation Principle (Princípio da Segregação de Interface)
-  * Os clientes não devem ser forçados a depender de métodos que não utilizam.
+  * Os clientes não devem ser forçados a depender de interfaces, types e métodos que não utilizam.
   * Interfaces maiores são divisíveis em menores. Grandes interfaces são poluídas e pouco práticas.
  */
 

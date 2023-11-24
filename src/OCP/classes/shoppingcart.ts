@@ -1,13 +1,5 @@
 /*eslint-disable*/
 
-/**
- * OCP = Open Closed Principle
- * Entidades devem estar abertas para extensão, mas fechadas para modificação
- * Devo criar formas de, ao precisar modificar algo (como o desconto) eu não precisar mexer no código fonte
- * Isso é feito na função totalWithDiscount, que recebe o desconto por meio de uma variavel que passo como parâmetro para a função
- *
- */
-
 import { Discount } from './discount';
 import { CartItem } from '../interfaces/cartItem';
 
