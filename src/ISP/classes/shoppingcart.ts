@@ -9,7 +9,7 @@
  */
 
 import { Discount } from './discount';
-import { CartItem } from '../interfaces/cartItem';
+import { CartItem } from './interfaces/cartItem';
 
 export class ShoppingCart {
 

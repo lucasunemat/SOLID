@@ -1,5 +1,5 @@
 /*eslint-disable*/
-import { OrderStatus } from '../interfaces/orderStatus';
+import { OrderStatus } from './interfaces/orderStatus';
 import { ShoppingCart } from './shoppingcart';
 import { Messaging } from '../services/messaging';
 import { Persistency } from '../services/persistency';
