@@ -3,6 +3,7 @@ import { OrderStatus } from './interfaces/orderStatus';
 import { ShoppingCart } from './shoppingcart';
 import { Messaging } from '../services/messaging';
 import { Persistency } from '../services/persistency';
+import { CustomerOrder } from './interfaces/customer-protocol';
 
 export class Order {
   private _orderStatus: OrderStatus = 'open'; //potencial atributo que não é responsabilidade do carrinho
@@ -16,7 +17,9 @@ export class Order {
      */
     private readonly cart: ShoppingCart,
     private readonly messaging: Messaging,
-    private readonly persistency: Persistency) { }
+    private readonly persistency: Persistency,
+    private readonly customer: CustomerOrder) { }
+
 
   get orderStatus(): OrderStatus {  //potencial atributo que não é responsabilidade do carrinho
     return this._orderStatus;
@@ -32,6 +35,9 @@ export class Order {
     this.messaging.sendMessage(`Seus pedido com total de ${this.cart.totalWithDiscount()} foi recebido!!`);
     this.persistency.saveOrder();
     this.cart.clear();
+    console.log('O cliente é:', this.customer.getName(), this.customer.getIDN());
+    // nao importa se é pessoa fisica ou juridica, o que importa é que ele é um customer
+    // e os seu nome e identificação vão aparecer no console
   }
 
 }
