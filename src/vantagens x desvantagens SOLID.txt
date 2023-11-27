@@ -26,3 +26,4 @@ VANTAGENS E DESVANTAGENS DO SOLID
       * Você pode criar MVP para jogar no ar;
     * KISS (Keep it simple, stupid)
       * mantenha o software simples;
+    * Tempo de desenvolvimento aumenta bastante;
