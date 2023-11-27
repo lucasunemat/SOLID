@@ -4,6 +4,7 @@
  * IDP - Inversion of Dependency Principle
  * Princípio da inversão de dependência: módulos de alto nível não devem depender de módulos de baixo nível. Ambos devem depender
     * de abstrações. Abstrações não devem depender de detalhes. Detalhes devem depender de abstrações.
+ * Dependa de abstrações, não de implementações;
  * Primeiro, entender o que é alto nível e baixo nível
  * Alto nível: módulos que são mais genéricos. Se formos verificar, as classes que definem atributos do objeto são de alto nível e
     * e as classes que implementam métodos são de baixo nível.
