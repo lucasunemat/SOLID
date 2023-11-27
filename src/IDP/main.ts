@@ -1,9 +1,16 @@
 /*eslint-disable*/
 
 /**
-  * Interface Segregation Principle (Princípio da Segregação de Interface)
-  * Os clientes não devem ser forçados a depender de interfaces, types e métodos que não utilizam.
-  * Interfaces maiores são divisíveis em menores. Grandes interfaces são poluídas e pouco práticas.
+ * IDP - Inversion of Dependency Principle
+ * Princípio da inversão de dependência: módulos de alto nível não devem depender de módulos de baixo nível. Ambos devem depender
+    * de abstrações. Abstrações não devem depender de detalhes. Detalhes devem depender de abstrações.
+ * Primeiro, entender o que é alto nível e baixo nível
+ * Alto nível: módulos que são mais genéricos. Se formos verificar, as classes que definem atributos do objeto são de alto nível e
+    * e as classes que implementam métodos são de baixo nível.
+ * Dentro de classes que injetam dependências, temos que a classe (Order, por exemplo) é a de alto nível e as dependências que ela
+    * injeta (ShoppingCart, Messaging, Persistency) são de baixo nível.
+ * Abstrações: classes abstratas, interfaces, types...
+ * No caso, temos que customer em Order é uma abstração, pois é a instanciação de uma interface.
  */
 
 import { ShoppingCart } from './classes/shoppingcart';

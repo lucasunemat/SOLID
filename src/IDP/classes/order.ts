@@ -18,7 +18,7 @@ export class Order {
     private readonly cart: ShoppingCart,
     private readonly messaging: Messaging,
     private readonly persistency: Persistency,
-    private readonly customer: CustomerOrder) { }
+    private readonly customer: CustomerOrder) { } //tá abstrata pois customer tá vindo de uma interface e não de uma classe concreta
 
 
   get orderStatus(): OrderStatus {  //potencial atributo que não é responsabilidade do carrinho
