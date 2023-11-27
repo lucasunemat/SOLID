@@ -1,5 +1,6 @@
+---------------------------------------------------------------------
 VANTAGENS E DESVANTAGENS DO SOLID
-
+---------------------------------------------------------------------
 * VANTAGENS
   * Código modular;
   * Código reutilizável (D. R. Y - Don't Repeat Yourself);
@@ -8,6 +9,20 @@ VANTAGENS E DESVANTAGENS DO SOLID
     * Qualquer classe que souber mandar mensagem (ou seja, ter conformidade com interface messaging-protocol);
       pode mandar mensagem;
   * Código com baixo acoplamento (classes não dependem de classes concretas que fazem tudo, I. D. P);
-  * Alta coesão => os métodos que não estão na classe são delegados
+  * Alta coesão => os métodos que não estão na classe são delegados;
+  * Código expansível (consigo adicionar novos tipos de desconto sem quebrar o sistema);
+  * Separations of concerns (separação de conceitos);
+    * SRP = cada classe é coesa, fazer o que é de responsa dela;
+  * Manutenção facilitada (posso mexer em Product desde que continue obedecendo a interface CartItem);
+  * Exige você fazer o código primeiro funcional e depois refinar com os princípios;
+  *
 
 * DESVANTAGENS
+  * Complexidade do código aumenta muito;
+    * Graças à modularidade do código. Muitas relações possíveis;
+    * Quantidade de código digitado aumenta;
+    * Cuide com YAGNI (You aren't gonna need it = você não vai precisar disso);
+      * Você vai realmente precisar de tudo isso?
+      * Você pode criar MVP para jogar no ar;
+    * KISS (Keep it simple, stupid)
+      * mantenha o software simples;
