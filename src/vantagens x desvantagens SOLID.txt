@@ -1,0 +1,13 @@
+VANTAGENS E DESVANTAGENS DO SOLID
+
+* VANTAGENS
+  * Código modular;
+  * Código reutilizável (D. R. Y - Don't Repeat Yourself);
+    * Posso usar messaging em qualquer outro local do sistema;
+  * Código testável (I. D. P.) - classes mock;
+    * Qualquer classe que souber mandar mensagem (ou seja, ter conformidade com interface messaging-protocol);
+      pode mandar mensagem;
+  * Código com baixo acoplamento (classes não dependem de classes concretas que fazem tudo, I. D. P);
+  * Alta coesão => os métodos que não estão na classe são delegados
+
+* DESVANTAGENS
