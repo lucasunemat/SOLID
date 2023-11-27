@@ -1,9 +1,9 @@
 /*eslint-disable*/
 import { OrderStatus } from './interfaces/orderStatus';
-import { ShoppingCart } from './shoppingcart';
 import { Messaging } from '../services/messaging';
 import { Persistency } from '../services/persistency';
 import { CustomerOrder } from './interfaces/customer-protocol';
+import { ShoppingCartProtocol } from './interfaces/shopping-cart-protocol';
 
 export class Order {
   private _orderStatus: OrderStatus = 'open'; //potencial atributo que não é responsabilidade do carrinho
@@ -15,7 +15,7 @@ export class Order {
      * Para quebrar isso e evitar desrespeitar lei de inversão de dependencia, o ideal seria
      * simplesmente criar uma abstração para cada uma dessas classes e injetar as abstrações
      */
-    private readonly cart: ShoppingCart,
+    private readonly cart: ShoppingCartProtocol,
     private readonly messaging: Messaging,
     private readonly persistency: Persistency,
     private readonly customer: CustomerOrder) { } //tá abstrata pois customer tá vindo de uma interface e não de uma classe concreta

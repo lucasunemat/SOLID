@@ -3,7 +3,7 @@
 import { CartItem } from './cartItem';
 
 export interface ShoppingCartProtocol {
-  items(): Readonly<CartItem>[]; //getter = atributo da classe
+  items: Readonly<CartItem>[]; //getter = atributo da classe
 
   //private readonly _items: CartItem[] = [];
   //constructor(private readonly discount: Discount) { }
@@ -19,5 +19,10 @@ export interface ShoppingCartProtocol {
   clear(): void;
 
   isEmpty(): boolean;
+
+  /*
+  * Para transformar ShoppingCart em uma interface, foi necessário:
+  * Basicamente tirou o corpo dos métodos e transformou o que tinha de getter em atributo
+  */
 }
 
